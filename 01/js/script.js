@@ -1,40 +1,33 @@
 "use strict";
 
-const numberOfFilms = +prompt('Сволько фильмов уже посмотрели?', '');
-
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	privat: false
-};
+const str ='teSt';
 
 
-for (let i = 0; i < 2; i++) {
-	const a = prompt('Последний фильм, который вы посмотрели?', ''),
-		b = prompt('Ваша оценка:', '');
 
-	if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-		personalMovieDB.movies[a] = b;
-		console.log('done');
-	} else {
-		console.log('error');
-		i--;
-	}
+console.log(str); 
+
+console.log(str.toUpperCase()); 
+
+console.log(str.toLowerCase());
+
+const fruit = 'Some fruit';
+
+console.log(fruit.indexOf("m")); 
+
+const logg = 'Hello world';
+console.log(logg.slice(6, 11));
+console.log(logg.substring (6, 11));
+
+console.log(logg.substr(6, 11));
 
 
-}
+const num = 12.5;
 
-if (personalMovieDB.count < 10) {
-	console.log('Мало фильмов');
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-	console.log('Вы классически зритель');
-} else if (personalMovieDB.count >= 30) {
-	console.log('Мало фильмов');
-} else {
-	console.log('Произошла ошибка');
-}
+console.log(Math.round(num));
 
-console.log(personalMovieDB);
 
+const test = "12.3px";
+
+console.log(parseInt(test));
+
+console.log(parseFloat(test));
